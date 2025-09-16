@@ -1,0 +1,298 @@
+{
+  "totalRequests": 240,
+  "successfulRequests": 108,
+  "failedRequests": 8,
+  "requestsByEndpoint": {
+    "/admin/login": 5,
+    "/admin/analytics": 18,
+    "/ai/roadmap": 16,
+    "/ai/generate-ppt": 14,
+    "/ai/process-audio": 11,
+    "/ai/process-image": 3,
+    "/ai/process-pdf": 7,
+    "/admin/system/health": 11,
+    "/admin/users/activity": 11,
+    "/admin/insights/business": 11,
+    "/ai/process-yt": 13
+  },
+  "requestsByMethod": {
+    "GET": 51,
+    "POST": 69,
+    "PUT": 0,
+    "DELETE": 0,
+    "PATCH": 0
+  },
+  "requestsByType": {
+    "text": 0,
+    "audio": 0,
+    "video": 0,
+    "image": 0,
+    "ppt": 0,
+    "notes": 0
+  },
+  "responseTimeStats": {
+    "total": 2277039,
+    "count": 108,
+    "average": 21083.694444444445,
+    "min": 0,
+    "max": 313072
+  },
+  "prints": {
+    "notes": 0,
+    "ppt": 0,
+    "audio": 0,
+    "video": 0,
+    "image": 0,
+    "total": 0
+  },
+  "dailyStats": {
+    "Wed Sep 03 2025": {
+      "requests": 90,
+      "prints": 0,
+      "errors": 6,
+      "successRate": "44.44",
+      "avgResponseTime": 0,
+      "uniqueUsers": 1,
+      "topEndpoints": {
+        "/admin/login": 5,
+        "/admin/analytics": 18,
+        "/ai/roadmap": 10,
+        "/ai/generate-ppt": 11,
+        "/ai/process-audio": 3,
+        "/ai/process-image": 2,
+        "/ai/process-pdf": 2,
+        "/admin/system/health": 11,
+        "/admin/users/activity": 11,
+        "/admin/insights/business": 11,
+        "/ai/process-yt": 6
+      }
+    },
+    "Thu Sep 04 2025": {
+      "requests": 10,
+      "prints": 0,
+      "errors": 0,
+      "successRate": "45.00",
+      "avgResponseTime": 0,
+      "uniqueUsers": 1,
+      "topEndpoints": {
+        "/ai/roadmap": 1,
+        "/ai/process-audio": 6,
+        "/ai/process-yt": 2,
+        "/ai/generate-ppt": 1
+      }
+    },
+    "Tue Sep 09 2025": {
+      "requests": 10,
+      "prints": 0,
+      "errors": 2,
+      "successRate": "44.55",
+      "avgResponseTime": 0,
+      "uniqueUsers": 1,
+      "topEndpoints": {
+        "/ai/process-pdf": 3,
+        "/ai/roadmap": 3,
+        "/ai/process-audio": 1,
+        "/ai/process-yt": 1,
+        "/ai/generate-ppt": 1,
+        "/ai/process-image": 1
+      }
+    },
+    "Tue Sep 16 2025": {
+      "requests": 10,
+      "prints": 0,
+      "errors": 0,
+      "successRate": "45.00",
+      "avgResponseTime": 0,
+      "uniqueUsers": 1,
+      "topEndpoints": {
+        "/ai/process-pdf": 2,
+        "/ai/process-audio": 1,
+        "/ai/generate-ppt": 1,
+        "/ai/roadmap": 2,
+        "/ai/process-yt": 4
+      }
+    }
+  },
+  "hourlyStats": {
+    "Wed Sep 03 2025-13:00": {
+      "requests": 15,
+      "errors": 0,
+      "avgResponseTime": 0
+    },
+    "Wed Sep 03 2025-14:00": {
+      "requests": 50,
+      "errors": 6,
+      "avgResponseTime": 0
+    },
+    "Wed Sep 03 2025-15:00": {
+      "requests": 6,
+      "errors": 0,
+      "avgResponseTime": 0
+    },
+    "Wed Sep 03 2025-16:00": {
+      "requests": 3,
+      "errors": 0,
+      "avgResponseTime": 0
+    },
+    "Wed Sep 03 2025-17:00": {
+      "requests": 2,
+      "errors": 0,
+      "avgResponseTime": 0
+    },
+    "Wed Sep 03 2025-18:00": {
+      "requests": 4,
+      "errors": 0,
+      "avgResponseTime": 0
+    },
+    "Wed Sep 03 2025-22:00": {
+      "requests": 6,
+      "errors": 0,
+      "avgResponseTime": 0
+    },
+    "Wed Sep 03 2025-23:00": {
+      "requests": 4,
+      "errors": 0,
+      "avgResponseTime": 0
+    },
+    "Thu Sep 04 2025-10:00": {
+      "requests": 5,
+      "errors": 0,
+      "avgResponseTime": 0
+    },
+    "Thu Sep 04 2025-17:00": {
+      "requests": 5,
+      "errors": 0,
+      "avgResponseTime": 0
+    },
+    "Tue Sep 09 2025-8:00": {
+      "requests": 10,
+      "errors": 2,
+      "avgResponseTime": 0
+    },
+    "Tue Sep 16 2025-7:00": {
+      "requests": 5,
+      "errors": 0,
+      "avgResponseTime": 0
+    },
+    "Tue Sep 16 2025-8:00": {
+      "requests": 5,
+      "errors": 0,
+      "avgResponseTime": 0
+    }
+  },
+  "userAgents": {
+    "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36": 62,
+    "Mozilla/5.0 (Linux; Android 13; Pixel 7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Mobile Safari/537.36": 2,
+    "Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1": 46,
+    "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36": 10
+  },
+  "ipAddresses": {
+    "::1": 120
+  },
+  "errorsByType": {
+    "HTTP_500": 3,
+    "HTTP_408": 2,
+    "HTTP_401": 1,
+    "HTTP_502": 2
+  },
+  "popularFeatures": {},
+  "sessionData": {},
+  "performanceMetrics": {
+    "slowestEndpoints": {
+      "/login": {
+        "total": 88,
+        "count": 3,
+        "average": 29.333333333333332,
+        "max": 37
+      },
+      "/analytics": {
+        "total": 129,
+        "count": 15,
+        "average": 8.6,
+        "max": 51
+      },
+      "/roadmap": {
+        "total": 346263,
+        "count": 16,
+        "average": 21641.4375,
+        "max": 65862
+      },
+      "/generate-ppt": {
+        "total": 176404,
+        "count": 14,
+        "average": 12600.285714285714,
+        "max": 17929
+      },
+      "/process-audio": {
+        "total": 450465,
+        "count": 10,
+        "average": 45046.5,
+        "max": 123461
+      },
+      "/system/health": {
+        "total": 50,
+        "count": 11,
+        "average": 4.545454545454546,
+        "max": 10
+      },
+      "/users/activity": {
+        "total": 67,
+        "count": 11,
+        "average": 6.090909090909091,
+        "max": 21
+      },
+      "/insights/business": {
+        "total": 71,
+        "count": 11,
+        "average": 6.454545454545454,
+        "max": 17
+      },
+      "/process-yt": {
+        "total": 1052968,
+        "count": 13,
+        "average": 80997.53846153847,
+        "max": 313072
+      },
+      "/process-pdf": {
+        "total": 197775,
+        "count": 3,
+        "average": 65925,
+        "max": 87404
+      },
+      "/process-image": {
+        "total": 52759,
+        "count": 1,
+        "average": 52759,
+        "max": 52759
+      }
+    },
+    "fastestEndpoints": {},
+    "errorRates": {
+      "/process-audio": {
+        "total": 1,
+        "errors": 1,
+        "rate": 100
+      },
+      "/process-image": {
+        "total": 2,
+        "errors": 2,
+        "rate": 100
+      },
+      "/process-pdf": {
+        "total": 4,
+        "errors": 4,
+        "rate": 100
+      },
+      "/login": {
+        "total": 1,
+        "errors": 1,
+        "rate": 100
+      }
+    }
+  },
+  "lastUpdated": "2025-09-16T02:56:52.538Z",
+  "systemInfo": {
+    "startTime": "2025-09-03T06:37:14.888Z",
+    "uptime": 1109977650
+  }
+}
