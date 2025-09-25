@@ -1,3 +1,4 @@
+const path = require('path');
 const express = require('express');
 const cors = require('cors');
 const helmet = require('helmet');
@@ -48,6 +49,14 @@ app.use('/api/', analyticsMiddleware);
 // Static files
 app.use('/uploads', express.static('uploads'));
 app.use('/downloads', express.static('downloads'));
+
+// Serve static files from the frontend build
+app.use(express.static(path.join(__dirname, 'dist')));
+
+// SPA fallback: serve index.html for any unknown route
+app.get('*', (req, res) => {
+  res.sendFile(path.join(__dirname, 'dist', 'index.html'));
+});
 
 // Health check route
 app.get('/api/health', (req, res) => {
