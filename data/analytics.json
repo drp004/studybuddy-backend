@@ -1,12 +1,12 @@
 {
-  "totalRequests": 240,
-  "successfulRequests": 108,
+  "totalRequests": 250,
+  "successfulRequests": 113,
   "failedRequests": 8,
   "requestsByEndpoint": {
     "/admin/login": 5,
     "/admin/analytics": 18,
     "/ai/roadmap": 16,
-    "/ai/generate-ppt": 14,
+    "/ai/generate-ppt": 19,
     "/ai/process-audio": 11,
     "/ai/process-image": 3,
     "/ai/process-pdf": 7,
@@ -17,7 +17,7 @@
   },
   "requestsByMethod": {
     "GET": 51,
-    "POST": 69,
+    "POST": 74,
     "PUT": 0,
     "DELETE": 0,
     "PATCH": 0
@@ -31,9 +31,9 @@
     "notes": 0
   },
   "responseTimeStats": {
-    "total": 2277039,
-    "count": 108,
-    "average": 21083.694444444445,
+    "total": 2278509,
+    "count": 113,
+    "average": 20163.796460176993,
     "min": 0,
     "max": 313072
   },
@@ -111,6 +111,17 @@
         "/ai/roadmap": 2,
         "/ai/process-yt": 4
       }
+    },
+    "Mon Nov 17 2025": {
+      "requests": 5,
+      "prints": 0,
+      "errors": 0,
+      "successRate": "45.20",
+      "avgResponseTime": 0,
+      "uniqueUsers": 1,
+      "topEndpoints": {
+        "/ai/generate-ppt": 5
+      }
     }
   },
   "hourlyStats": {
@@ -178,16 +189,22 @@
       "requests": 5,
       "errors": 0,
       "avgResponseTime": 0
+    },
+    "Mon Nov 17 2025-7:00": {
+      "requests": 5,
+      "errors": 0,
+      "avgResponseTime": 0
     }
   },
   "userAgents": {
     "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36": 62,
     "Mozilla/5.0 (Linux; Android 13; Pixel 7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Mobile Safari/537.36": 2,
     "Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1": 46,
-    "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36": 10
+    "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36": 10,
+    "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36": 5
   },
   "ipAddresses": {
-    "::1": 120
+    "::1": 125
   },
   "errorsByType": {
     "HTTP_500": 3,
@@ -218,9 +235,9 @@
         "max": 65862
       },
       "/generate-ppt": {
-        "total": 176404,
-        "count": 14,
-        "average": 12600.285714285714,
+        "total": 177874,
+        "count": 19,
+        "average": 9361.78947368421,
         "max": 17929
       },
       "/process-audio": {
@@ -290,9 +307,9 @@
       }
     }
   },
-  "lastUpdated": "2025-09-16T02:56:52.538Z",
+  "lastUpdated": "2025-11-17T02:25:13.197Z",
   "systemInfo": {
     "startTime": "2025-09-03T06:37:14.888Z",
-    "uptime": 1109977650
+    "uptime": 6464878309
   }
 }

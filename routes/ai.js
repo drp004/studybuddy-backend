@@ -178,7 +178,7 @@ ${contentText}
 6. Return ONLY the JSON object, no additional text or formatting`;
 
     const GEMINI_API_KEY = 'AIzaSyAZNbL4x9KClb4RngBAcHWjzE3GINf2LWk';
-    const GEMINI_API_URL = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash-exp:generateContent?key=${GEMINI_API_KEY}`;
+    const GEMINI_API_URL = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash-lite:generateContent?key=${GEMINI_API_KEY}`;
 
     const requestBody = {
       contents: [{
@@ -434,7 +434,7 @@ ${contentText}
 6. Return ONLY the JSON object, no additional text or formatting`;
 
     const GEMINI_API_KEY = 'AIzaSyAZNbL4x9KClb4RngBAcHWjzE3GINf2LWk';
-    const GEMINI_API_URL = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash-exp:generateContent?key=${GEMINI_API_KEY}`;
+    const GEMINI_API_URL = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash-lite:generateContent?key=${GEMINI_API_KEY}`;
 
     const requestBody = {
       contents: [{
@@ -813,7 +813,7 @@ CRITICAL: Return ONLY a valid JSON object. No text before or after. No markdown.
     }
 
     const GEMINI_API_KEY = 'AIzaSyAZNbL4x9KClb4RngBAcHWjzE3GINf2LWk';
-    const GEMINI_API_URL = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash-exp:generateContent?key=${GEMINI_API_KEY}`;
+    const GEMINI_API_URL = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash-lite:generateContent?key=${GEMINI_API_KEY}`;
 
     const requestBody = {
       contents: [{
@@ -1113,7 +1113,7 @@ router.post('/process-yt', async (req, res) => {
 
     // Step 2: Use Gemini Flash API to enhance the transcript or generate notes
     const GEMINI_API_KEY = 'AIzaSyAZNbL4x9KClb4RngBAcHWjzE3GINf2LWk';
-    const GEMINI_API_URL = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash-exp:generateContent?key=${GEMINI_API_KEY}`;
+    const GEMINI_API_URL = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash-lite:generateContent?key=${GEMINI_API_KEY}`;
 
     // Create enhanced prompt for structured JSON response with colorful sections
     let prompt;
@@ -1326,7 +1326,7 @@ RESPOND WITH ONLY THE JSON STRUCTURE ABOVE. NO MARKDOWN. NO EXPLANATIONS. JUST P
             processingDate: new Date().toISOString(),
             transcriptLength: originalTranscript ? originalTranscript.length : 0,
             transcriptError: transcriptError || null,
-            geminiModel: 'gemini-2.0-flash-exp'
+            geminiModel: 'gemini-2.0-flash-lite'
           }
         };
         
@@ -1344,7 +1344,7 @@ RESPOND WITH ONLY THE JSON STRUCTURE ABOVE. NO MARKDOWN. NO EXPLANATIONS. JUST P
             processingDate: new Date().toISOString(),
             transcriptLength: originalTranscript ? originalTranscript.length : 0,
             transcriptError: transcriptError || null,
-            geminiModel: 'gemini-2.0-flash-exp',
+            geminiModel: 'gemini-2.0-flash-lite',
             parseError: 'JSON parsing failed, using text format'
           }
         };
@@ -1420,8 +1420,8 @@ This video appears to be educational content covering important concepts and pra
 
 // Generate PPT with Gemini image generation
 router.post('/generate-ppt', async (req, res) => {
+  const { topic, tone = 'professional', maxSlides = 10 } = req.body;
   try {
-    const { topic, tone = 'professional', maxSlides = 10 } = req.body;
 
     if (!topic) {
       return res.status(400).json({
@@ -1436,7 +1436,7 @@ router.post('/generate-ppt', async (req, res) => {
     console.log('📊 Max slides:', maxSlides);
 
     const GEMINI_API_KEY = 'AIzaSyAZNbL4x9KClb4RngBAcHWjzE3GINf2LWk';
-    const GEMINI_API_URL = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash-exp:generateContent?key=${GEMINI_API_KEY}`;
+    const GEMINI_API_URL = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash-lite:generateContent?key=${GEMINI_API_KEY}`;
 
     // Enhanced prompt for PPT generation with image suggestions
     const prompt = `
@@ -1725,7 +1725,7 @@ router.post('/roadmap', async (req, res) => {
 
     // Step 2: Enhance with Gemini Flash API
     const GEMINI_API_KEY = 'AIzaSyAZNbL4x9KClb4RngBAcHWjzE3GINf2LWk';
-    const GEMINI_API_URL = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash-exp:generateContent?key=${GEMINI_API_KEY}`;
+    const GEMINI_API_URL = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash-lite:generateContent?key=${GEMINI_API_KEY}`;
 
     // Create enhanced prompt based on StudyBuddy response or user input
     let prompt;
@@ -2029,7 +2029,7 @@ router.post('/generate-ppt', async (req, res) => {
 
     // Gemini Flash API configuration
     const GEMINI_API_KEY = 'AIzaSyAZNbL4x9KClb4RngBAcHWjzE3GINf2LWk';
-    const GEMINI_API_URL = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash-exp:generateContent?key=${GEMINI_API_KEY}`;
+    const GEMINI_API_URL = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash-lite:generateContent?key=${GEMINI_API_KEY}`;
 
     // Construct the perfect prompt for high-quality presentation
     const prompt = `Create a comprehensive and engaging presentation about "${topic}" with the following requirements:
